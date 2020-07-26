@@ -57,6 +57,7 @@ class SpeedDial extends StatefulWidget {
   final int animationSpeed;
 
   SpeedDial({
+    Key key,
     this.children = const [],
     this.visible = true,
     this.backgroundColor,
@@ -78,7 +79,7 @@ class SpeedDial extends StatefulWidget {
     this.curve = Curves.linear,
     this.onPress,
     this.animationSpeed = 150
-  });
+  }) : super(key: key);
 
   @override
   SpeedDialState createState() => SpeedDialState();
