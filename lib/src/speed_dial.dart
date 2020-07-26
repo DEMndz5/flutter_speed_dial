@@ -125,7 +125,7 @@ class _SpeedDialState extends State<SpeedDial> with SingleTickerProviderStateMix
     super.didUpdateWidget(oldWidget);
   }
 
-  void _toggleChildren() {
+  void toggleChildren() {
     var newValue = !_open;
     setState(() {
       _open = newValue;
